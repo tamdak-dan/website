@@ -1,0 +1,228 @@
+@keyframes moveUpAndDown {
+  0% {
+    transform: translatey(-20%);
+  }
+  50% {
+    transform: translatey(0%);
+  }
+  100% {
+    transform: translatey(-20%);
+  }
+}
+
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* top div */
+.about-top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  border-bottom: #732002 solid 2px;
+}
+
+.info-card {
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  column-gap: 5px;
+  width: 400px;
+  min-width: 150px;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgb(173, 173, 173);
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+.card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+  min-height: 150px;
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* bottom div */
+/* .about-bottom {
+  display: grid;
+  grid-template-rows: 100 100 100;
+} */
+
+.about-education, .about-industry-exp,
+.about-worked-with {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-education, .about-industry-exp {
+  height: 120px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: #732002 solid 2px;
+}
+
+/* .about-worked-with {
+  justify-content: start;
+  align-items: start;
+  padding-top: 10px;
+} */
+
+/* .about-drawer-title {
+  font-family: 'Roboto', Arial;
+  font-size: 20px;
+} */
+
+/* .worked-drawer-title {
+  font-family: 'Roboto', Arial;
+  font-size: 20px;
+  width: 140px;
+  margin: 0;
+}
+
+.about-education-drawer, 
+.about-industry-drawer,
+.about-worked-drawer {
+  flex: 1;
+  overflow: hidden;
+}
+
+.about-worked-drawer {
+  height: 200px;
+} */
+
+/* .drawer-arrow {
+  height: 20px;
+  transform: 0deg;
+  transition-duration: 250ms;
+  margin-right: 15px;
+}
+
+.drawer-arrow:hover {
+  cursor: pointer;
+  translate: 5px;
+}
+
+.drawer-arrow-active {
+  transform: rotate(180deg);
+  transition-duration: 250ms;
+}
+
+.drawer-arrow-active:hover {
+  translate: -5px;
+} 
+
+.edu-drawer-content,
+.exp-drawer-content,
+.work-drawer-content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  translate: -100%;
+  transition-duration: 500ms;
+} */
+
+.calpoly-logo {
+  height: 70px;
+  object-fit: cover;
+}
+
+.timeline-arrow {
+  height: 30px;
+}
+
+.about-drawer-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.inari-logo, .siemens-logo,
+.bae-logo {
+  width: 160px;
+  object-fit: cover;
+}
+
+.inari-logo {
+  margin-right: 30px;
+}
+
+/* .drawer-active {
+  translate: 0%;
+}
+
+.work-drawer-content {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.work-shelf-1, .work-shelf-2,
+.work-shelf-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.beckhoff-logo, .twincat-logo,
+.applied-motion-logo, .eaton-logo,
+.panasonic-logo, .arduino-logo,
+.mitsubishi-logo, .qt-logo,
+.keyence-logo, .ni-logo,
+.cognex-logo, .siemens-logo-2
+ {
+  height: 30px;
+  object-fit: cover;
+} */
+
+.down-arrow-container-about {
+  position: relative;
+  margin-top: 70px;
+}
+
+.down-arrow-about,
+.down-arrow-anchor-about {
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+}
+
+.down-arrow-anchor-about {
+  position: absolute;
+  border-radius: 60px;
+  transform: translateX(-50%);
+  top: -3px;
+}
+
+.down-arrow-anchor-about:hover {
+  cursor: url('../images/icons/gripper-cursor-closed.png'), auto;
+  border: #000000 2px solid;
+  overflow: visible;
+}
+
+.down-arrow-about,
+.down-arrow-anchor-about {
+  animation: 
+  moveUpAndDown 2s ease-in-out infinite;
+}

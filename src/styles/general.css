@@ -1,0 +1,97 @@
+.color-palette {
+  color: #D99C2B;
+  color: #BF7315;
+  color: #A63F03;
+  color: #732002;
+  
+  color: #8C1C03;
+  color: #D93D04;
+  color: #2B1E59;
+  color: #5C51A6;
+  color: #828FD9;
+}
+
+body, html {
+  height: auto;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: rgb(211, 211, 211);
+  
+  cursor: url('../images/icons/gripper-cursor.png'), auto;
+}
+
+a {
+  cursor: url('../images/icons/gripper-cursor-closed.png'), auto;
+}
+
+.intro-section, .about-section, 
+ .services-section, .contact-section {
+  color: rgb(0, 0, 0);
+  max-width: 1000px;
+  min-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20vh;
+  padding-top: 70px;
+}
+
+.intro-section {
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-section,
+.projects {
+  color: rgb(0, 0, 0);
+  max-width: 1000px;
+  min-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 70vh;
+  padding-top: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contact-section {
+  display: block;
+  align-items: center;
+}
+
+
+/**** Titles and Fonts ****/
+.title {
+  flex: 1;
+  font-family: 'Noto Serif';
+  font-size: 60px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.subtitle, .subtitle-small, .title-small {
+  font-family: 'Roboto', Arial;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #1d1d1d;
+  text-align: justify;
+}
+
+.title-small {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.subtitle-small {
+  font-size: 15px;
+  color: #1d1d1d;
+  margin: 0;
+}

@@ -1,0 +1,114 @@
+@keyframes slideInFromBottom_1 {
+  0% {
+    transform: translatey(20%);
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateX(0);
+    color: black;
+  }
+}
+
+@keyframes slideInFromBottom_2 {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    color: rgba(0, 0, 0, 0);
+    transform: translatey(20%);
+  }
+  100% {
+    transform: translateX(0);
+    color: black;
+  }
+}
+
+@keyframes slideInFromTop_1 {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+    transform: translatey(-40%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translatey(0);
+  }
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: translatey(-20%);
+  }
+  50% {
+    transform: translatey(0%);
+  }
+  100% {
+    transform: translatey(-20%);
+  }
+}
+
+.intro-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1000px;
+}
+
+.intro-marquee {
+  margin: 0;
+  width: 100vw;
+  font-family: 'Roboto', Arial;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+
+.intro-msg-1,
+.intro-msg-2 {
+  font-family: 'Noto Serif';
+  font-size: 60px;
+  margin: 20px;
+  text-align: center;
+}
+
+.intro-msg-1 {
+  padding-top: 100px;
+
+  animation: 1s ease-out 0s 1 slideInFromBottom_1;
+}
+
+.intro-msg-2 {
+  animation: 2s ease-out 0s 1 slideInFromBottom_2;
+}
+
+.down-arrow-container {
+  position: relative;
+  margin-top: 70px;
+}
+
+.down-arrow,
+.down-arrow-anchor {
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+}
+
+.down-arrow-anchor {
+  position: absolute;
+  border-radius: 60px;
+  left: -2px;
+  top: -3px;
+}
+
+.down-arrow-anchor:hover {
+  cursor: url('../images/icons/gripper-cursor-closed.png'), auto;
+  border: #000000 2px solid;
+  overflow: visible;
+}
+
+.down-arrow,
+.down-arrow-anchor {
+  animation: 
+  slideInFromTop_1 3s ease-out forwards,
+  moveUpAndDown 2s ease-in-out infinite;
+}

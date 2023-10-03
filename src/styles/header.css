@@ -1,0 +1,124 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-40%);
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateX(0);
+    color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(40%);
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateX(0);
+    color: rgb(255, 253, 253);
+  }
+}
+
+@keyframes slideInFromRight_Linkedin {
+  0% {
+    transform: translate(40%, -8px);
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translate(0, -8px);
+    color: rgb(255, 253, 253);
+  }
+}
+
+.header {
+  position: sticky; 
+  top: 0;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 60;
+  display: flex;
+  background-color: #000000;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+  z-index: 999;
+}
+
+.company-name {
+  color: #ffffff;
+  font-family: 'Averia Libre', Arial;
+  font-size: 40px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  height: 20px;
+  text-decoration: none;
+
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.about-link, .services-link, 
+.work-link, .contact-link {
+  color: #ffffff;
+  font-family: 'Roboto', Arial;
+  font-size: 20px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  height: 20px;
+  margin-top: 28px;
+  text-decoration: none;
+
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.about-link:hover, .services-link:hover, 
+.work-link:hover, .contact-link:hover {
+  border-bottom: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  transition: 100ms;
+}
+
+.linkedin-link {
+  margin-right: 50px;
+  margin-bottom: 0px;
+  height: 20px;
+  margin-top: 28px;
+}
+
+.linkedin-logo {
+  height: 30px;
+  transform: translateY(-8px);
+  border: rgba(255, 255, 255, 0) 2px solid;
+
+  animation: 1s ease-out 0s 1 slideInFromRight_Linkedin;
+}
+
+.linkedin-logo:hover {
+  background-color: rgb(10, 102, 194);
+  box-shadow: 0 0 5px 2px rgb(10, 102, 194);
+  border-radius: 5px;
+}
+
+.logo {
+  object-fit: contain;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 100%;
+
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.link-container {
+  display: flex;
+  justify-content: right;
+  flex: 1;
+  position: relative;
+}

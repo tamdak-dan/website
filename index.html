@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ash Automation</title>
+
+    <!-- fonts from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+
+    <!-- hubspot form -->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/general.css">
+    <link rel="stylesheet" href="src/styles/intro.css">
+    <link rel="stylesheet" href="src/styles/about.css">
+    <!-- <link rel="stylesheet" href="src/styles/projects.css"> -->
+    <link rel="stylesheet" href="src/styles/projects2.css">
+    <link rel="stylesheet" href="src/styles/contact.css">
+    <link rel="stylesheet" href="src/styles/marquee.css">
+
+    <!-- jquery lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    
+    <!-- js functions -->
+    <script src="./src/general.js"></script>
+
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <!-- <img class="logo" src="src/images/initials.png" alt=""> -->
+      <p class="company-name">D.A</p>
+      <div class="link-container">
+        <a class="about-link" href="#about">About</a>
+        <a class="work-link" href="#projects">Projects</a>
+        <a class="services-link" href="#services">Services</a>
+        <a class="contact-link" href="#contact">Contact</a>
+        <a class="linkedin-link" href="www.linkedin.com/in/daniel-ash-1953a4108">
+          <img class="linkedin-logo" src="./src/images/icons/linkedin-logo.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <!-- Intro Section -->
+    <div id="intro" class="intro-section">
+      <!-- <div id="intro-marquee" class="intro-marquee"></div> -->
+      <p class="intro-msg-1">Hi, I'm Dan</p>
+      <p class="intro-msg-2">and I make machines</p>
+      <div class="down-arrow-container">
+        <img class="down-arrow" src="./src/images/icons/down-arrow.png" alt="">
+        <a class="down-arrow-anchor" href="#about"></a>
+      </div>
+      
+      <!-- <div class="subtitle">
+        <p>
+          I make machines come to life while helping businesses 
+          save money on manufacturing/production costs 
+          by increasing efficiency
+        </p>
+      </div> -->
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about-section">
+      <div class="about-top">
+        <div class="info-card">
+          <div class="image-container">
+            <img class="card-photo" src="src/images/dan.jpg">
+          </div>
+          <p class="title-small" style="margin: 0 auto; margin-top: 20px;">Daniel Ash</p>
+          <p class="subtitle-small" style="margin: 0 auto;">Automation Engineer</p>
+        </div>
+        <div class="about-text" style="text-align: right;">
+          <p class="title" style="margin-bottom: 0px;">
+            About me
+          </p>
+          <div class="about-container">
+            <p class="subtitle">
+              My name is Dan and I help make custom automated equipment come to life. 
+              In school I studied mechanical engineering and specialized in mechatronics 
+              (a fancy word for robotics). I have built off my education throughout my career to 
+              develop a specialized skillset focusing on all aspects of automated machines: 
+              PLC programming, HMI design, I/O selection and troubleshooting, electrical cabinet 
+              design, as well as validation and documentation. In my current role as an Automation 
+              Engineer at Inari Medical, I work as an internal contractor for automated 
+              equipment assisitng other departments with their automation needs. Through this I have 
+              had the opportunity to work on a wide variety of custom machines utilizing motion control, 
+              vision systems, custom graphics, presice control loops, and much more. If you think I could 
+              be a good fit for a current or future automation project, you can reach out to me through 
+              the contact form at the bottom of the page. Thank you for reading!
+
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="about-bottom">
+          <div class="about-education">
+            <!-- <p class="about-drawer-title">Education</p>
+            <img onclick="ToggleEduArrow()" id="edu-arrow" class="drawer-arrow" src="src/images/icons/right-arrow.png">
+            <script src="src/general.js"></script>
+            <div id="edu-drawer" class="about-education-drawer">
+              <div id="edu-drawer-content" class="edu-drawer-content">
+                <div class="edu-text">
+                  <p class="title-small" style="text-decoration: underline; margin: 0; font-size: 20px;">California Polytechnic State University - San Luis Obispo</p>
+                  <p class="subtitle-small">B.S. Mechanical Engineering - 2019</p>
+                  <p class="subtitle-small">Concentration: Mechatronics</p>
+                </div>
+                <img class="calpoly-logo" src="src/images/logos/Cal-Poly-logo-bw.png">
+              </div>
+            </div> -->
+
+            <!-- <p class="about-drawer-title">Education:</p> -->
+            <div class="edu-text">
+              <p class="title-small" style="margin: 0; font-size: 30px;">California Polytechnic State University - San Luis Obispo</p>
+              <p class="subtitle-small">B.S. <b>Mechanical Engineering</b> - 2019</p>
+              <p class="subtitle-small">Concentration: <b>Mechatronics</b></p>
+            </div>
+            <img class="calpoly-logo" src="src/images/logos/Cal-Poly-logo-bw.png">
+          </div>
+          <div class="about-industry-exp">
+            <!-- <p class="about-drawer-title">Industry Exp</p>
+            <img onclick="ToggleExpArrow()" id="exp-arrow" class="drawer-arrow" src="src/images/icons/right-arrow.png">
+            <script src="src/general.js"></script>
+            <div class="about-industry-drawer">
+              <div id="exp-drawer-content" class="exp-drawer-content">
+                <div class="about-drawer-logo-container">
+                  <img class="inari-logo" src="src/images/logos/Inari-logo-bw.png">
+                  <p class="subtitle-small" style="margin-top: 15px;">2021 - Present</p>
+                </div>
+                <div class="about-drawer-logo-container">
+                  <img class="siemens-logo" src="src/images/logos/Siemens-logo-bw.png">
+                  <p class="subtitle-small" style="margin-top: 15px;">2019 - 2021</p>
+                </div>
+                <div class="about-drawer-logo-container">
+                  <img class="bae-logo" src="src/images/logos/BAE_Systems-logo-bw.png">
+                  <p class="subtitle-small" style="margin-top: 15px;">Summer 2018</p>
+                </div>
+              </div> -->
+
+              <!-- <p class="about-drawer-title">Industry Experience:</p> -->
+              <!-- <div class="about-drawer-logo-container">
+                <img class="bae-logo" src="src/images/logos/BAE_Systems-logo-bw.png">
+                <p class="subtitle-small" style="margin-top: 15px;">Summer 2018</p>
+              </div>
+              <div class="about-drawer-logo-container">
+                <img class="siemens-logo" src="src/images/logos/Siemens-logo-bw.png">
+                <p class="subtitle-small" style="margin-top: 15px;">2019 - 2021</p>
+              </div>
+              
+              <div class="about-drawer-logo-container">
+                <img class="inari-logo" src="src/images/logos/Inari-logo-bw.png">
+                <p class="subtitle-small" style="margin-top: 15px;">2021 - Present</p>
+              </div> -->
+
+              <img class="bae-logo" src="src/images/logos/BAE_Systems-logo-bw.png">
+              <img class="timeline-arrow" src="src/images/icons/right-arrow-blk.png">
+              <img class="siemens-logo" src="src/images/logos/Siemens-logo-bw.png">
+              <img class="timeline-arrow" src="src/images/icons/right-arrow-blk.png">
+              <img class="inari-logo" src="src/images/logos/Inari-logo-bw.png">
+            </div>
+          </div>
+          <div id="about-worked-with" class="about-worked-with">
+            <!-- <p class="worked-drawer-title">Worked With</p>
+            <img onclick="ToggleWorkArrow()" id="work-arrow" class="drawer-arrow" src="src/images/icons/right-arrow.png">
+            <script src="src/general.js"></script>
+            <div class="about-worked-drawer">
+              <div id="work-drawer-content" class="work-drawer-content">
+                <div class="work-shelf-1">
+                  <img class="beckhoff-logo" src="src/images/logos/beckhoff-logo-bw.png">
+                  <img class="twincat-logo" src="src/images/logos/TwinCAT-logo.png">
+                  <img class="applied-motion-logo" src="src/images/logos/applied-motion-logo.png">
+                  <img class="siemens-logo-2" src="src/images/logos/Siemens-logo-bw.png">
+                </div>
+                <div class="work-shelf-2">
+                  <img class="arduino-logo" src="src/images/logos/Arduino-logo.png">
+                  <img class="panasonic-logo" src="src/images/logos/Panasonic-logo.png">
+                  <img class="ni-logo" src="src/images/logos/ni-logo.png">
+                  <img class="keyence-logo" src="src/images/logos/keyence-logo.png">
+                </div>
+                <div class="work-shelf-3">
+                  <img class="cognex-logo" src="src/images/logos/cognex-logo.png">
+                  <img class="mitsubishi-logo" src="src/images/logos/Mitsubishi-logo.png">
+                  <img class="eaton-logo" src="src/images/logos/eaton-logo.png">
+                  <img class="qt-logo" src="src/images/logos/QT-logo.png"> 
+                </div>
+              </div>
+            </div> -->
+          
+        </div>
+        <div class="down-arrow-container-about" style="display: flex; justify-content: center; margin-top: 100px;">
+          <img class="down-arrow-about" src="./src/images/icons/down-arrow.png" alt="">
+          <a class="down-arrow-anchor-about" href="#projects"></a>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <!-- <div id="projects" class="projects-section">
+      <p class="title" style="margin: 50px; margin-left: 0px;">Featured Projects</p>
+      <div id="project-carosuel" class="project-carosuel">
+      </div>
+      <div id="project-popup" class="project-popup">
+      </div>
+    </div> -->
+
+    <div id="projects" class="projects">
+      <p class="title" style="margin: 50px; margin-left: 0px;">Projects</p>
+      <div class="projects-container">
+        <div class="proj-ex-large">
+          <p class="proj-intro">
+            <b>Automated Tipping Conveyor <br> [ 2022 ]</b>
+          </p>
+          <img class="proj-img" src="src/images/project-images/tipping-conveyor/TC_Render.png" alt=""
+               onclick="ToggleProjectPopup(1)">
+        </div>
+        <div class="proj-ex-small">
+          <p class="proj-intro">
+            <b>Automated Braid Angle Measurement <br> [ 2021 ]</b>
+          </p>
+          <img class="proj-img" src="src/images/project-images/braid-angle/BA_Iso.png" alt=""
+               onclick="ToggleProjectPopup(2)">
+        </div>
+        <div class="proj-ex-small">
+          <p class="proj-intro">
+            <b>Engagement Ring <br> [ 2021 ]</b>
+          </p>
+          <img class="proj-img" src="src/images/project-images/engagement-ring/ER_Macro.jpg" alt=""
+               onclick="ToggleProjectPopup(3)">
+        </div>
+        <div class="proj-ex-large">
+          <p class="proj-intro">
+            <b>Molten Salt Bath <br> [ 2022 ]</b>
+          </p>
+          <img class="proj-img" src="src/images/project-images/salt-bath/SB_ProjectImg.png" alt=""
+               onclick="ToggleProjectPopup(4)">
+        </div>
+        <div class="proj-ex-small">
+          <p class="proj-intro">
+            <b>Electropolish <br> [ 2021 ]</b>
+          </p>
+          <img class="proj-img" src="src/images/project-images/electropolish/EP_front-end.png" alt=""
+               onclick="ToggleProjectPopup(5)">
+        </div>
+      </div>
+    </div>
+
+    <div id="proj-desc-popup" class="proj-desc-popup">
+      <div id="project-1" class="project-content">
+        <h1 class="project-title">Automated Tipping Conveyor</h1>
+        <p class="project-subtitle">[ 2022 | Cost: $50k | Savings: 140k/yr ]</p>
+        <p class="project-description">
+          This project was created in order to automate the bonding process of two plastic components which are 
+          part of a high-volume assembly. The average time an operator took to complete the task of applying glue, 
+          pressing the parts together, and curing the bond was around 1:30 - meaning it would take almost two full 
+          shifts to fufill a 300 unit work order! Our machine cut that time down drastically, allowing for a syringe 
+          to be completed every 15 seconds. This allowed for the work order to get completed in only a few hours 
+          instead of two days! <b>A 250% improvement.</b><br><br> This project was completed by my co-worker and I. 
+          He was in charge of the mechanical side of things and I did everything controls related. This included 
+          selecting sensors and a system which would suit our needs, along with all of the programming and human 
+          machine interface (HMI) work. This was the first project where I really got to dive into the design side 
+          of the user interface and learn how to make a beautifiul and modern looking interface that people want to 
+          use rather than the clunky and dated interfaces which are still so common on nearly all manufacturing 
+          equipment. If you're going to make a cool machine you might as well make the whole thing cool.
+        </p>
+      </div>
+      <div id="project-2" class="project-content">
+        <h1 class="project-title">Automated Braid Angle Measurement</h1>
+        <p class="project-subtitle">[ 2021 | Cost: $10k ]</p>
+        <p class="project-description">
+          braid angle meas
+        </p>
+        <!-- <iframe height="315"
+          src="./src/images/project-images/braid-angle/BA_Video.mp4">
+        </iframe> -->
+      </div>
+      <div id="project-3" class="project-content">
+        <h1 class="project-title">Engagement Ring</h1>
+        <p class="project-subtitle">[ 2021 | machine cost: remainder of life ]</p>
+        <p class="project-description">
+          this be the engagement ring
+        </p>
+      </div>
+      <div id="project-4" class="project-content">
+        <h1 class="project-title">Salt Bath</h1>
+        <p class="project-subtitle">[ 2022 | Cost: $30k | Savings: $200K ]</p>
+        <p class="project-description">
+          SALT BATH
+        </p>
+      </div>
+      <div id="project-5" class="project-content">
+        <h1 class="project-title">Electropolish</h1>
+        <p class="project-subtitle">[ 2021 | Cost: $15k | Savings: $50K ]</p>
+        <p class="project-description">
+          Electropolish
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <!-- <div id="services" class="services-section">
+      <p class="title">Services</p> 
+      <div class="services-container">
+        <p class="subtitle">Human-Machine Interface Design</p>
+        <p class="subtitle">Custom Machine Programming</p>
+        <p class="subtitle">Machine Specification Consulting</p>
+        <p class="subtitle">Schematics and Documentation</p>
+      </div>
+    </div> -->
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section">
+      <p class="title">Contact Me</p>
+      <div class="form-container">
+        <script>
+          hbspt.forms.create({
+            region: "na1",
+            portalId: "42632396",
+            formId: "31a910c8-323b-4115-a1b7-26f11dfff4ec"
+          });
+        </script>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
